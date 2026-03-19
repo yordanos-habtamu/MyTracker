@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+venv/
+
+# Env
+.env
+.env.*
+
+# Local data
+activity.db
+*.db
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
