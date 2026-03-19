@@ -11,6 +11,20 @@ A comprehensive desktop activity tracker that monitors window usage and browser 
 - **Cross-platform**: Works on Windows, macOS, and Linux
 - **SQLite Database**: Local storage for all activity data
 
+## Screenshots
+
+**Dashboard Overview**
+
+![Dashboard Overview](screenshots/Screenshot_20260319_105626.png)
+
+**Widget Overlay**
+
+![Widget Overlay](screenshots/Screenshot_20260319_105923.png)
+
+**Browser Stats**
+
+![Browser Stats](screenshots/Screenshot_20260319_110017.png)
+
 ## Installation
 
 1. **Clone the repository:**
