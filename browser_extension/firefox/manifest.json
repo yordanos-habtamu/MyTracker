@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Activity Tracker",
+  "version": "1.1",
+  "description": "Tracks browser tab activity and sends data to desktop tracker",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://localhost:5001/*",
+    "https://localhost:5001/*",
+    "http://127.0.0.1:5001/*",
+    "https://127.0.0.1:5001/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Activity Tracker",
+    "default_popup": "popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "activity-tracker@mytracker.com"
+    }
+  }
+}
