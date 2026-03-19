@@ -7,7 +7,7 @@ import sys
 import time
 from pathlib import Path
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QApplication
-from PyQt6.QtCore import Qt, QTimer
+from PyQt6.QtCore import Qt, QTimer, QProcess
 from PyQt6.QtGui import QFont, QColor, QPainter, QPen
 
 try:
@@ -200,7 +200,10 @@ class ActivityWidget(QWidget):
     def _launch_gui(self):
         try:
             repo_root = Path(__file__).resolve().parents[1]
-            subprocess.Popen([sys.executable, "main.py", "--gui"], cwd=str(repo_root))
+            # Prefer QProcess for GUI launches; fall back to subprocess if needed.
+            started = QProcess.startDetached(sys.executable, ["main.py", "--gui"], str(repo_root))
+            if not started:
+                subprocess.Popen([sys.executable, "main.py", "--gui"], cwd=str(repo_root))
         except: pass
 
     def showEvent(self, event):
