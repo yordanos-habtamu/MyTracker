@@ -13,11 +13,13 @@ A comprehensive desktop activity tracker that monitors window usage and browser 
 
 ## Screenshots
 
-**Dashboard Overview**
+**Widget Desktop Widget**
+
+- **Interactive Desktop Widget**: As soon as the widget appears when you click on it, it will open up the dashboard
 
 ![Dashboard Overview](screenshots/Screenshot_20260319_105626.png)
 
-**Widget Overlay**
+**Dashboard Overview**
 
 ![Widget Overlay](screenshots/Screenshot_20260319_105923.png)
 
@@ -29,7 +31,7 @@ A comprehensive desktop activity tracker that monitors window usage and browser 
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/yordanos-habtamu/MyTracker
    cd mytracker
    ```
 
